@@ -662,7 +662,7 @@ export function contact() {
       <div class="reveal">
         <div class="boutique">
           <b>${icons.mail ? '' : ''}Concierge</b>
-          <p>concierge@umar.com<br>+1 (212) 555-0148 · WhatsApp available</p>
+          <p>concierge@umar.com<br>+92 325-7800500 · WhatsApp available</p>
         </div>
         <div class="boutique">
           <b>New York — Flagship</b>
