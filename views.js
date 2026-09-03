@@ -1,8 +1,8 @@
 /* ==========================================================================
-   UMAR — views.js
-   Storefront views: home, categories, shop, product, about, contact,
-   wishlist, comparison
-   ========================================================================== */
+    UMAR — views.js
+    Storefront views: home, categories, shop, product, about, contact,
+    wishlist, comparison
+    ========================================================================== */
 
 import {
   PRODUCTS,
@@ -34,8 +34,8 @@ import {
 } from './ui.js';
 
 /* ==========================================================================
-   HOME
-   ========================================================================== */
+    HOME
+    ========================================================================== */
 export function home() {
   const featured = ['p01', 'p05', 'p09', 'p17', 'p13', 'p21', 'p02', 'p23'].map(getProduct);
   const arrivals = PRODUCTS.filter((p) => p.new || p.limited).concat(
@@ -45,7 +45,7 @@ export function home() {
   return `
   <section class="hero" id="hero">
     <div class="hero__media" data-parallax="0.18">
-      <img src="img/hero.webp" alt="A gold chronograph, black crystal flacon and folded calfskin arranged on dark marble under cinematic light" width="1536" height="1024" fetchpriority="high" decoding="async">
+      <img src="hero.webp" alt="A gold chronograph, black crystal flacon and folded calfskin arranged on dark marble under cinematic light" width="1536" height="1024" fetchpriority="high" decoding="async">
     </div>
     <div class="hero__veil"></div>
     <div class="wrap"><div class="hero__inner">
@@ -116,7 +116,7 @@ export function home() {
   <section class="section--tight section">
     <div class="wrap">
       <div class="promo reveal">
-        <div class="promo__bg"><img src="img/promo-banner.webp" alt="" loading="lazy" decoding="async"></div>
+        <div class="promo__bg"><img src="promo-banner.webp" alt="" loading="lazy" decoding="async"></div>
         <div class="promo__body">
           <p class="eyebrow">Autumn Private Sale</p>
           <h2 class="promo__title">Up to 15% on <em>selected</em> archive pieces</h2>
@@ -157,7 +157,7 @@ export function home() {
     <div class="wrap">
       <div class="split">
         <div class="split__media reveal reveal--mask">
-          <img src="img/packaging.webp" alt="A UMAR order boxed in signature packaging with a ribbon and certificate" loading="lazy" decoding="async">
+          <img src="packaging.webp" alt="A UMAR order boxed in signature packaging with a ribbon and certificate" loading="lazy" decoding="async">
         </div>
         <div class="reveal">
           <p class="eyebrow">About UMAR</p>
@@ -194,7 +194,7 @@ export function home() {
           (t, i) => `
           <figure class="quote reveal tilt" style="--reveal-delay:${i * 70}ms">
             <span class="eyebrow">${icons.spark}</span>
-            <blockquote>“${t.quote}”</blockquote>
+            <blockquote>"${t.quote}"</blockquote>
             <figcaption><b>${t.name}</b>${t.role}</figcaption>
           </figure>`
         ).join('')}
@@ -212,8 +212,8 @@ export function home() {
 }
 
 /* ==========================================================================
-   CATEGORIES
-   ========================================================================== */
+    CATEGORIES
+    ========================================================================== */
 export function categories() {
   return `
   <header class="page-head">
@@ -248,8 +248,8 @@ export function categories() {
 }
 
 /* ==========================================================================
-   SHOP
-   ========================================================================== */
+    SHOP
+    ========================================================================== */
 const SORTS = {
   featured: 'Featured',
   new: 'Newest first',
@@ -370,8 +370,8 @@ export function filterProducts(query = {}) {
 }
 
 /* ==========================================================================
-   PRODUCT DETAIL
-   ========================================================================== */
+    PRODUCT DETAIL
+    ========================================================================== */
 export function product(id) {
   const p = getProduct(id);
   if (!p) {
@@ -557,8 +557,8 @@ export function product(id) {
 }
 
 /* ==========================================================================
-   ABOUT
-   ========================================================================== */
+    ABOUT
+    ========================================================================== */
 export function about() {
   return `
   <header class="page-head">
@@ -573,7 +573,7 @@ export function about() {
     <div class="wrap">
       <div class="split">
         <div class="split__media reveal reveal--mask">
-          <img src="img/atelier.webp" alt="An artisan finishing a component at a workbench" loading="lazy" decoding="async">
+          <img src="atelier.webp" alt="An artisan finishing a component at a workbench" loading="lazy" decoding="async">
         </div>
         <div class="reveal">
           <p class="eyebrow">Our story</p>
@@ -632,7 +632,7 @@ export function about() {
           (t, i) => `
           <figure class="quote reveal" style="--reveal-delay:${i * 70}ms">
             <span class="eyebrow">${icons.spark}</span>
-            <blockquote>“${t.quote}”</blockquote>
+            <blockquote>"${t.quote}"</blockquote>
             <figcaption><b>${t.name}</b>${t.role}</figcaption>
           </figure>`
         ).join('')}
@@ -645,8 +645,8 @@ export function about() {
 }
 
 /* ==========================================================================
-   CONTACT
-   ========================================================================== */
+    CONTACT
+    ========================================================================== */
 export function contact() {
   return `
   <header class="page-head">
@@ -705,7 +705,7 @@ export function contact() {
           <h3 class="display" style="font-size:var(--text-lg);margin-bottom:var(--space-4)">Frequent questions</h3>
           <details><summary>Do you ship to my country?</summary><p>We ship insured to 68 countries. Duties are estimated at checkout and prepaid on your behalf, so nothing is collected on delivery.</p></details>
           <details><summary>Is cash on delivery available?</summary><p>Yes, in selected markets including Pakistan, the UAE and Saudi Arabia, for orders up to $2,000. A $12 handling fee applies.</p></details>
-          <details><summary>Can a piece be engraved?</summary><p>Hand engraving of up to three initials is complimentary on jewelry, leather and selected timepieces. Add a note at checkout or contact the concierge.</p></details>
+          <details><summary>Can a piece be engraved?</summary><p>Hand engraving of up to three initials is complimentary on jewelry, leather and selected timepieces. Add a note at checkout or contact our concierge.</p></details>
           <details><summary>How does the lifetime guarantee work?</summary><p>Manufacturing defects are repaired free of charge for life. Wear-and-tear servicing is charged at cost, and we hold parts for a minimum of thirty years.</p></details>
           <details><summary>What is your return window?</summary><p>Thirty days from delivery, unworn and in the original packaging. We arrange and pay for insured collection.</p></details>
         </div>
@@ -716,8 +716,8 @@ export function contact() {
 }
 
 /* ==========================================================================
-   WISHLIST
-   ========================================================================== */
+    WISHLIST
+    ========================================================================== */
 export function wishlist() {
   const items = state.wishlist.map(getProduct).filter(Boolean);
   return `
@@ -745,8 +745,8 @@ export function wishlist() {
 }
 
 /* ==========================================================================
-   COMPARE
-   ========================================================================== */
+    COMPARE
+    ========================================================================== */
 export function compare() {
   const items = state.compare.map(getProduct).filter(Boolean);
   if (!items.length) {
