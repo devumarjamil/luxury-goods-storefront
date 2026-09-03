@@ -1,7 +1,7 @@
 /* ==========================================================================
-   UMAR — ui.js
-   Icons and reusable component markup
-   ========================================================================== */
+    UMAR — ui.js
+    Icons and reusable component markup
+    ========================================================================== */
 
 import { money, pctOff, stockLabel, inWishlist, inCompare } from './store.js';
 import { catName } from './data.js';
@@ -151,7 +151,7 @@ export const trustRow = () => `
 
 export const newsletter = () => `
 <section class="newsletter section--tight section">
-  <div class="newsletter__bg"><img src="img/texture-silk.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="newsletter__bg"><img src="texture-silk.webp" alt="" loading="lazy" decoding="async"></div>
   <div class="wrap">
     <div class="newsletter__inner reveal">
       <p class="eyebrow">The Private List</p>
