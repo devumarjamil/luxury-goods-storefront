@@ -1,7 +1,7 @@
 /* ==========================================================================
-   UMAR — data.js
-   Catalog, categories, reviews, testimonials, demo orders
-   ========================================================================== */
+    UMAR — data.js
+    Catalog, categories, reviews, testimonials, demo orders
+    ========================================================================== */
 
 export const BRAND = {
   name: 'UMAR',
@@ -17,44 +17,44 @@ export const CATEGORIES = [
   {
     id: 'timepieces',
     name: 'Timepieces',
-    img: 'img/cat-timepieces.webp',
+    img: 'cat-timepieces.webp',
     desc: 'Swiss-made mechanical movements finished by hand in our Geneva atelier.',
   },
   {
     id: 'fragrance',
     name: 'Fragrance',
-    img: 'img/cat-fragrance.webp',
+    img: 'cat-fragrance.webp',
     desc: 'Grasse-composed extraits built on rare oud, amber and white musk.',
   },
   {
     id: 'leather',
     name: 'Leather Goods',
-    img: 'img/cat-leather.webp',
+    img: 'cat-leather.webp',
     desc: 'Full-grain calfskin, saddle-stitched and edge-painted in Florence.',
   },
   {
     id: 'eyewear',
     name: 'Eyewear',
-    img: 'img/cat-eyewear.webp',
+    img: 'cat-eyewear.webp',
     desc: 'Japanese titanium and Mazzucchelli acetate with polarised lenses.',
   },
   {
     id: 'jewelry',
     name: 'Fine Jewelry',
-    img: 'img/cat-jewelry.webp',
+    img: 'cat-jewelry.webp',
     desc: '18k solid gold, black onyx and conflict-free brilliant-cut stones.',
   },
   {
     id: 'home',
     name: 'Home & Objects',
-    img: 'img/cat-home.webp',
+    img: 'cat-home.webp',
     desc: 'Crystal, cashmere and marble objects for the considered interior.',
   },
 ];
 
 const P = (o) => ({
   currency: 'USD',
-  images: [o.img, `img/cat-${o.cat}.webp`, 'img/packaging.webp'],
+  images: [o.img, `cat-${o.cat}.webp`, 'packaging.webp'],
   ...o,
 });
 
@@ -66,14 +66,14 @@ export const PRODUCTS = [
     cat: 'timepieces',
     price: 4850,
     was: 5600,
-    img: 'img/p01.webp',
+    img: 'p01.webp',
     rating: 4.8,
     reviews: 214,
     stock: 7,
     new: true,
     blurb: 'A tri-compax chronograph with sunburst charcoal dial and gold-plated indices.',
     desc:
-      'The Meridian Chronograph 41 distils fifty years of racing-instrument design into a 41 mm case that wears far slimmer than its specification suggests. The sunburst charcoal dial is galvanically finished in six passes, then fitted with applied gold-plated indices and a hand-lacquered tachymeter. Inside, a column-wheel chronograph movement is regulated across five positions before it leaves Geneva.',
+      'The Meridian Chronograph 41 distils fifty years of racing-instrument design into a 41 mm case that wears far slimmer than its specification suggests. The sunburst charcoal dial is galvanica[...]',
     specs: {
       Movement: 'UM-704 automatic column-wheel chronograph, 68 h reserve',
       Case: '41 mm surgical-grade 316L steel, sapphire crystal both sides',
@@ -88,13 +88,13 @@ export const PRODUCTS = [
     name: 'Solstice Automatic Gold',
     cat: 'timepieces',
     price: 7200,
-    img: 'img/p02.webp',
+    img: 'p02.webp',
     rating: 4.9,
     reviews: 138,
     stock: 4,
     blurb: 'Solid 18k case, guilloché dial, micro-rotor movement only 3.9 mm thick.',
     desc:
-      'Solstice is our dress watch in its purest expression: a solid 18k yellow-gold case, a hand-guilloché dial turned on a century-old rose engine, and a micro-rotor calibre that keeps overall thickness to 8.2 mm. It is designed to disappear under a cuff and reappear as a quiet statement.',
+      'Solstice is our dress watch in its purest expression: a solid 18k yellow-gold case, a hand-guilloché dial turned on a century-old rose engine, and a micro-rotor calibre that keeps overall [...',
     specs: {
       Movement: 'UM-512 micro-rotor automatic, 3.9 mm, 72 h reserve',
       Case: '39 mm solid 18k yellow gold',
@@ -110,13 +110,13 @@ export const PRODUCTS = [
     cat: 'timepieces',
     price: 3980,
     was: 4400,
-    img: 'img/p03.webp',
+    img: 'p03.webp',
     rating: 4.7,
     reviews: 309,
     stock: 12,
     blurb: 'DLC-coated professional diver with ceramic bezel and lumed depth scale.',
     desc:
-      'Built to ISO 6425 and pressure-tested individually, the Onyx Diver 300M pairs a black DLC-coated case with a matte ceramic bezel insert. The bracelet carries a ratcheting extension so it adapts over a wetsuit in a single motion.',
+      'Built to ISO 6425 and pressure-tested individually, the Onyx Diver 300M pairs a black DLC-coated case with a matte ceramic bezel insert. The bracelet carries a ratcheting extension so it a[...]',
     specs: {
       Movement: 'UM-330 automatic, 60 h reserve, COSC-grade regulation',
       Case: '42 mm DLC-coated steel, ceramic bezel insert',
@@ -131,14 +131,14 @@ export const PRODUCTS = [
     name: 'Aurum Skeleton Tourbillon',
     cat: 'timepieces',
     price: 18500,
-    img: 'img/p04.webp',
+    img: 'p04.webp',
     rating: 5,
     reviews: 41,
     stock: 2,
     limited: true,
     blurb: 'Flying tourbillon, openworked bridges, 78 hours of hand-finishing.',
     desc:
-      'Limited to 50 pieces annually, the Aurum Skeleton Tourbillon exposes its flying tourbillon through openworked bridges that are chamfered, black-polished and hand-engraved. Each movement represents approximately 78 hours of finishing by a single watchmaker, whose initials are engraved on the barrel bridge.',
+      'Limited to 50 pieces annually, the Aurum Skeleton Tourbillon exposes its flying tourbillon through openworked bridges that are chamfered, black-polished and hand-engraved. Each movement re[...]',
     specs: {
       Movement: 'UM-901 hand-wound flying tourbillon, 100 h reserve',
       Case: '41.5 mm 18k rose gold, sapphire caseback',
@@ -155,14 +155,14 @@ export const PRODUCTS = [
     name: 'Noir Absolu Eau de Parfum',
     cat: 'fragrance',
     price: 320,
-    img: 'img/p05.webp',
+    img: 'p05.webp',
     rating: 4.8,
     reviews: 862,
     stock: 34,
     bestseller: true,
     blurb: 'Black pepper, incense and leather over a vetiver-amber base. 100 ml.',
     desc:
-      'Noir Absolu opens with cracked black pepper and Somalian incense, settles into a smoked-leather heart, and closes on Haitian vetiver and grey amber. Composed in Grasse at 22% extrait concentration, it projects for roughly ten hours and leaves a distinctly warm sillage.',
+      'Noir Absolu opens with cracked black pepper and Somalian incense, settles into a smoked-leather heart, and closes on Haitian vetiver and grey amber. Composed in Grasse at 22% extrait conce[...]',
     specs: {
       Concentration: 'Eau de Parfum, 22% extrait',
       Volume: '100 ml',
@@ -178,13 +178,13 @@ export const PRODUCTS = [
     cat: 'fragrance',
     price: 480,
     was: 540,
-    img: 'img/p06.webp',
+    img: 'p06.webp',
     rating: 4.9,
     reviews: 418,
     stock: 18,
     blurb: 'Laotian oud, Turkish rose and saffron. Our most concentrated extrait. 75 ml.',
     desc:
-      'Oud Royale Intense is built around a single lot of aged Laotian oud, softened by Turkish rose absolute and lifted with saffron. At 30% concentration it is intentionally uncompromising — two sprays are the intended dose.',
+      'Oud Royale Intense is built around a single lot of aged Laotian oud, softened by Turkish rose absolute and lifted with saffron. At 30% concentration it is intentionally uncompromising — [...]',
     specs: {
       Concentration: 'Extrait de Parfum, 30%',
       Volume: '75 ml',
@@ -199,13 +199,13 @@ export const PRODUCTS = [
     name: 'Ivory Musk Eau de Parfum',
     cat: 'fragrance',
     price: 260,
-    img: 'img/p07.webp',
+    img: 'p07.webp',
     rating: 4.6,
     reviews: 527,
     stock: 41,
     blurb: 'A skin-close white musk with iris, ambrette and warm cashmeran. 100 ml.',
     desc:
-      'Ivory Musk is the quietest fragrance we make — a translucent veil of white musk, powdered iris and ambrette seed over cashmeran. It reads as clean rather than sweet and layers beautifully beneath Noir Absolu.',
+      'Ivory Musk is the quietest fragrance we make — a translucent veil of white musk, powdered iris and ambrette seed over cashmeran. It reads as clean rather than sweet and layers beautifull[...]',
     specs: {
       Concentration: 'Eau de Parfum, 18%',
       Volume: '100 ml',
@@ -221,13 +221,13 @@ export const PRODUCTS = [
     cat: 'fragrance',
     price: 210,
     was: 265,
-    img: 'img/p08.webp',
+    img: 'p08.webp',
     rating: 4.7,
     reviews: 233,
     stock: 0,
     blurb: 'Three 10 ml refillable atomisers in a lacquered travel case.',
     desc:
-      'A lacquered travel case holding three 10 ml magnetic atomisers, pre-filled with Noir Absolu, Oud Royale Intense and Ivory Musk. The atomisers refill from any full bottle without a funnel.',
+      'A lacquered travel case holding three 10 ml magnetic atomisers, pre-filled with Noir Absolu, Oud Royale Intense and Ivory Musk. The atomisers refill from any full bottle without a funnel.[...]',
     specs: {
       Contents: '3 × 10 ml refillable atomisers',
       Fragrances: 'Noir Absolu, Oud Royale Intense, Ivory Musk',
@@ -244,14 +244,14 @@ export const PRODUCTS = [
     name: 'Continental Weekender Bag',
     cat: 'leather',
     price: 1890,
-    img: 'img/p09.webp',
+    img: 'p09.webp',
     rating: 4.9,
     reviews: 176,
     stock: 9,
     bestseller: true,
     blurb: '48-hour holdall in vegetable-tanned calfskin with suede lining.',
     desc:
-      'Cut from a single hide of vegetable-tanned calfskin, the Continental Weekender is sized for 48 hours and for the overhead bin. The base carries five solid-brass studs, the lining is goat suede, and the saddle stitching is done by hand at eight stitches per inch.',
+      'Cut from a single hide of vegetable-tanned calfskin, the Continental Weekender is sized for 48 hours and for the overhead bin. The base carries five solid-brass studs, the lining is goat s[...]',
     specs: {
       Material: 'Vegetable-tanned full-grain calfskin',
       Lining: 'Goat suede with two slip pockets',
@@ -266,13 +266,13 @@ export const PRODUCTS = [
     name: 'Meridian Bifold Wallet',
     cat: 'leather',
     price: 390,
-    img: 'img/p10.webp',
+    img: 'p10.webp',
     rating: 4.8,
     reviews: 641,
     stock: 27,
     blurb: 'Eight card slots, twin note compartments, 6 mm folded profile.',
     desc:
-      'A bifold engineered to stay flat: skived to 0.8 mm at the fold, it measures 6 mm closed even when fully loaded. Eight card slots, two note compartments and a hidden pocket, all edge-painted in five coats.',
+      'A bifold engineered to stay flat: skived to 0.8 mm at the fold, it measures 6 mm closed even when fully loaded. Eight card slots, two note compartments and a hidden pocket, all edge-painte[...]',
     specs: {
       Material: 'Full-grain calfskin, 0.8 mm skived',
       Capacity: '8 card slots, 2 note compartments, 1 hidden pocket',
@@ -288,13 +288,13 @@ export const PRODUCTS = [
     cat: 'leather',
     price: 2450,
     was: 2800,
-    img: 'img/p11.webp',
+    img: 'p11.webp',
     rating: 4.9,
     reviews: 88,
     stock: 5,
     blurb: 'Structured 16-inch briefcase with padded laptop sleeve and brass locks.',
     desc:
-      'A structured briefcase built on a hand-formed leather frame rather than plastic, so it holds its line for decades. Padded 16-inch laptop sleeve, three document dividers, and twin solid-brass turn locks machined in-house.',
+      'A structured briefcase built on a hand-formed leather frame rather than plastic, so it holds its line for decades. Padded 16-inch laptop sleeve, three document dividers, and twin solid-bra[...]',
     specs: {
       Material: 'Full-grain calfskin over hand-formed leather frame',
       Laptop: 'Padded sleeve fits up to 16 inch',
@@ -309,13 +309,13 @@ export const PRODUCTS = [
     name: 'Onyx Card Holder',
     cat: 'leather',
     price: 220,
-    img: 'img/p12.webp',
+    img: 'p12.webp',
     rating: 4.7,
     reviews: 512,
     stock: 46,
     blurb: 'Four-slot holder in black grained calfskin with RFID shielding.',
     desc:
-      'A four-slot card holder in black grained calfskin, lined with an RFID-shielding membrane that blocks 13.56 MHz reads. Thin enough for a front pocket, rigid enough to keep cards from bowing.',
+      'A four-slot card holder in black grained calfskin, lined with an RFID-shielding membrane that blocks 13.56 MHz reads. Thin enough for a front pocket, rigid enough to keep cards from bowing[...]',
     specs: {
       Material: 'Grained full-grain calfskin',
       Capacity: '4 card slots, 1 central pocket',
@@ -332,14 +332,14 @@ export const PRODUCTS = [
     name: 'Aviator Titanium Sunglasses',
     cat: 'eyewear',
     price: 520,
-    img: 'img/p13.webp',
+    img: 'p13.webp',
     rating: 4.8,
     reviews: 394,
     stock: 22,
     new: true,
     blurb: 'Japanese titanium frame, 21 g, polarised gradient lenses.',
     desc:
-      'A modern aviator drawn in Japanese beta-titanium: 21 grams complete, with adjustable silicone nose pads and hand-polished barrel hinges. The polarised gradient lenses filter 100% of UVA and UVB.',
+      'A modern aviator drawn in Japanese beta-titanium: 21 grams complete, with adjustable silicone nose pads and hand-polished barrel hinges. The polarised gradient lenses filter 100% of UVA an[...]',
     specs: {
       Frame: 'Japanese beta-titanium, 21 g',
       Lenses: 'Polarised gradient, CR-39, category 3',
@@ -354,13 +354,13 @@ export const PRODUCTS = [
     name: 'Sculpted Acetate Frames',
     cat: 'eyewear',
     price: 410,
-    img: 'img/p14.webp',
+    img: 'p14.webp',
     rating: 4.6,
     reviews: 271,
     stock: 19,
     blurb: 'Mazzucchelli acetate, tumbled 48 hours, with gold-tone core wires.',
     desc:
-      'Milled from a single block of Mazzucchelli M49 acetate and tumbled for 48 hours in beechwood chips, these frames arrive with the depth of finish that only slow polishing produces. Gold-tone core wires and seven-barrel hinges.',
+      'Milled from a single block of Mazzucchelli M49 acetate and tumbled for 48 hours in beechwood chips, these frames arrive with the depth of finish that only slow polishing produces. Gold-ton[...]',
     specs: {
       Frame: 'Mazzucchelli M49 acetate, block-milled',
       Lenses: 'Demo lenses, prescription-ready',
@@ -376,13 +376,13 @@ export const PRODUCTS = [
     cat: 'eyewear',
     price: 580,
     was: 650,
-    img: 'img/p15.webp',
+    img: 'p15.webp',
     rating: 4.5,
     reviews: 147,
     stock: 3,
     blurb: 'Single-lens shield with mirrored coating and matte black temples.',
     desc:
-      'A continuous single-lens shield with an anti-reflective interior coating and a mirrored exterior. The matte black temples are titanium with a five-degree wrap that keeps peripheral glare out without pressure at the temple.',
+      'A continuous single-lens shield with an anti-reflective interior coating and a mirrored exterior. The matte black temples are titanium with a five-degree wrap that keeps peripheral glare o[...]',
     specs: {
       Frame: 'Matte black titanium, 5° wrap',
       Lens: 'Single-piece shield, mirrored, category 3',
@@ -397,13 +397,13 @@ export const PRODUCTS = [
     name: 'Optical Meridian Frames',
     cat: 'eyewear',
     price: 360,
-    img: 'img/p16.webp',
+    img: 'p16.webp',
     rating: 4.7,
     reviews: 205,
     stock: 31,
     blurb: 'Thin metal optical frame with blue-light filtering lenses included.',
     desc:
-      'A 1.2 mm stainless optical frame weighing 16 grams, supplied with blue-light filtering lenses as standard. Designed for all-day screen work and accepted by most prescription labs without modification.',
+      'A 1.2 mm stainless optical frame weighing 16 grams, supplied with blue-light filtering lenses as standard. Designed for all-day screen work and accepted by most prescription labs without m[...]',
     specs: {
       Frame: '1.2 mm stainless steel, 16 g',
       Lenses: 'Blue-light filtering, anti-reflective',
@@ -420,13 +420,13 @@ export const PRODUCTS = [
     name: 'Signet Ring 18k Gold',
     cat: 'jewelry',
     price: 1650,
-    img: 'img/p17.webp',
+    img: 'p17.webp',
     rating: 4.9,
     reviews: 163,
     stock: 11,
     blurb: 'Solid 18k yellow gold, hand-engravable oval face, 14 g.',
     desc:
-      'A solid 18k yellow-gold signet with a generous oval face left blank for hand engraving. Lost-wax cast, then filed and polished by hand over four stages. Complimentary monogram engraving is included with every order.',
+      'A solid 18k yellow-gold signet with a generous oval face left blank for hand engraving. Lost-wax cast, then filed and polished by hand over four stages. Complimentary monogram engraving is[...]',
     specs: {
       Metal: 'Solid 18k yellow gold, 14 g',
       Face: '15 × 13 mm oval, engravable',
@@ -441,7 +441,7 @@ export const PRODUCTS = [
     name: 'Onyx Cufflinks',
     cat: 'jewelry',
     price: 480,
-    img: 'img/p18.webp',
+    img: 'p18.webp',
     rating: 4.7,
     reviews: 198,
     stock: 24,
@@ -463,13 +463,13 @@ export const PRODUCTS = [
     cat: 'jewelry',
     price: 2300,
     was: 2600,
-    img: 'img/p19.webp',
+    img: 'p19.webp',
     rating: 4.8,
     reviews: 94,
     stock: 6,
     blurb: 'Hand-woven 18k mesh with concealed clasp and safety catch.',
     desc:
-      'Over four hundred hand-woven 18k links form a mesh that drapes like fabric. The clasp is fully concealed within the weave and secured with a double safety catch, so the bracelet reads as a continuous band.',
+      'Over four hundred hand-woven 18k links form a mesh that drapes like fabric. The clasp is fully concealed within the weave and secured with a double safety catch, so the bracelet reads as a[...]',
     specs: {
       Metal: '18k yellow gold, 32 g',
       Construction: 'Hand-woven mesh, 400+ links',
@@ -484,14 +484,14 @@ export const PRODUCTS = [
     name: 'Diamond Pendant Necklace',
     cat: 'jewelry',
     price: 3900,
-    img: 'img/p20.webp',
+    img: 'p20.webp',
     rating: 5,
     reviews: 57,
     stock: 4,
     limited: true,
     blurb: '0.75 ct brilliant-cut solitaire, VS1, on an 18k cable chain.',
     desc:
-      'A 0.75 carat brilliant-cut solitaire, graded VS1 clarity and F colour, held in a six-claw 18k setting that lifts the stone clear of the chain for maximum light return. Supplied with an independent grading certificate.',
+      'A 0.75 carat brilliant-cut solitaire, graded VS1 clarity and F colour, held in a six-claw 18k setting that lifts the stone clear of the chain for maximum light return. Supplied with an ind[...]',
     specs: {
       Stone: '0.75 ct brilliant-cut, VS1 clarity, F colour',
       Setting: 'Six-claw 18k white gold',
@@ -508,14 +508,14 @@ export const PRODUCTS = [
     name: 'Noir Scented Candle 400g',
     cat: 'home',
     price: 145,
-    img: 'img/p21.webp',
+    img: 'p21.webp',
     rating: 4.8,
     reviews: 736,
     stock: 58,
     bestseller: true,
     blurb: 'Incense, cedar and amber in hand-blown black glass. 80-hour burn.',
     desc:
-      'A three-wick candle poured in coconut-soy wax and scented with the Noir Absolu accord — incense, cedar and amber. The hand-blown black glass vessel is designed to be kept and reused once the 80-hour burn is finished.',
+      'A three-wick candle poured in coconut-soy wax and scented with the Noir Absolu accord — incense, cedar and amber. The hand-blown black glass vessel is designed to be kept and reused once[...]',
     specs: {
       Weight: '400 g, three wicks',
       'Burn time': 'Approximately 80 hours',
@@ -531,7 +531,7 @@ export const PRODUCTS = [
     cat: 'home',
     price: 690,
     was: 790,
-    img: 'img/p22.webp',
+    img: 'p22.webp',
     rating: 4.9,
     reviews: 122,
     stock: 8,
@@ -552,13 +552,13 @@ export const PRODUCTS = [
     name: 'Cashmere Throw',
     cat: 'home',
     price: 780,
-    img: 'img/p23.webp',
+    img: 'p23.webp',
     rating: 4.9,
     reviews: 211,
     stock: 14,
     blurb: 'Grade-A Mongolian cashmere, 130 × 180 cm, hand-finished fringe.',
     desc:
-      'Woven from grade-A Mongolian cashmere with fibres of 15.5 microns or finer, this throw is brushed twice and finished with a hand-knotted fringe. Substantial enough for a sofa, light enough for a long flight.',
+      'Woven from grade-A Mongolian cashmere with fibres of 15.5 microns or finer, this throw is brushed twice and finished with a hand-knotted fringe. Substantial enough for a sofa, light enough[...]',
     specs: {
       Material: '100% grade-A Mongolian cashmere, 15.5 micron',
       Dimensions: '130 × 180 cm',
@@ -573,7 +573,7 @@ export const PRODUCTS = [
     name: 'Marble Desk Organiser',
     cat: 'home',
     price: 420,
-    img: 'img/p24.webp',
+    img: 'p24.webp',
     rating: 4.6,
     reviews: 168,
     stock: 17,
